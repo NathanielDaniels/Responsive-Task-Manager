@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700');
+
+$white: #fff;
+$darkblue: #3a4793;
+$lightblue: #2583ec;
+$purple: #9787ee;
+$yellow: #ffbf3e;
+
+*,h1,h2,h3,h4,h5,h6,p,span,div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+html, body {
+    background: $white;
+    height: 100%;
+}
+
+@import "home";
+@import "all-tasks";
+

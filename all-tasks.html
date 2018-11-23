@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Web App 2</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div id="all-tasks">
+        <section class="header">
+            <div class="top">
+                <div class="logo">Task Manager</div>
+                <div class="task-total">
+                    <div class="task"><span class="number">12</span> Tasks</div>
+                    <div class="task"><span class="number">5</span> Completed</div>
+                </div>
+        
+                <div class="add-circle">
+                   <a href="#"><i class="fas fa-plus-circle"></i></a> 
+                </div>
+            </div>
+        </section>
+
+        <section class="content-area">
+            <div class="container">
+                <div class="task-container">
+                    <div class="task-box">
+                        <div class="title">
+                            Clean Room
+                        </div>
+                        <div class="date">
+                            Created: November 14, 2018
+                        </div>
+                        <div class="check-box">
+                           <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="task-box">
+                        <div class="title">
+                            Clean Room
+                        </div>
+                        <div class="date">
+                            Created: November 14, 2018
+                        </div>
+                        <div class="check-box" >
+                            <i class="fas fa-check" ></i>
+                        </div>
+                    </div>
+                    <div class="task-box">
+                        <div class="title">
+                            Clean Room
+                        </div>
+                        <div class="date">
+                            Created: November 14, 2018
+                        </div>
+                        <div class="check-box">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div><div class="task-box">
+                        <div class="title">
+                            Clean Room
+                        </div>
+                        <div class="date">
+                            Created: November 14, 2018
+                        </div>
+                        <div class="check-box">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div><div class="task-box">
+                        <div class="title">
+                            Clean Room
+                        </div>
+                        <div class="date">
+                            Created: November 14, 2018
+                        </div>
+                        <div class="check-box">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div><div class="task-box">
+                        <div class="title">
+                            Clean Room
+                        </div>
+                        <div class="date">
+                            Created: November 14, 2018
+                        </div>
+                        <div class="check-box">
+                           <i class="fas fa-check"></i>
+                        </div>
+                    </div><div class="task-box">
+                        <div class="title">
+                            Clean Room
+                        </div>
+                        <div class="date">
+                            Created: November 14, 2018
+                        </div>
+                        <div class="check-box">
+                           <i class="fas fa-check"></i>
+                        </div>
+                    </div><div class="task-box">
+                        <div class="title">
+                            Clean Room
+                        </div>
+                        <div class="date">
+                            Created: November 14, 2018
+                        </div>
+                        <div class="check-box">
+                           <i class="fas fa-check"></i>
+                        </div>
+                    </div><div class="task-box">
+                        <div class="title">
+                            Clean Room
+                        </div>
+                        <div class="date">
+                            Created: November 14, 2018
+                        </div>
+                        <div class="check-box">
+                           <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--End content-area-->
+        </section>
+
+
+        <section class="task-form">
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            <form action="#">
+                <label for="">New Task</label>
+                <input type="text" placeholder="Title">
+                <input type="text" placeholder="Category">
+                <input type="text" placeholder="Place">
+                <input type="text" placeholder="Time">
+                <textarea placeholder="Notes"></textarea>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+    </div>
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.add-circle').on('click', function() {
+                document.querySelector('.task-form').classList.toggle('active');
+            })
+        })
+
+        $(document).ready(function () {
+            $('.close-btn').on('click', function () {
+                document.querySelector('.task-form').classList.toggle('active');
+            })
+        })
+        $(document).ready(function () {
+            $('.check-box').on('click', function () {
+                document.querySelector('.fa-check').classList.toggle('active');
+            })
+        })
+    </script>
+</body>
+</html>
